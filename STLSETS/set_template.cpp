@@ -24,6 +24,7 @@ int main(int argc, char *argvp[]){
 			std::cout << index << std::endl;
 		result = 0;
 	}
+	
 	return result;
 	
 }
