@@ -5,6 +5,7 @@
 #include <random>
 #include <algorithm>
 
+//
 template <typename T>
 struct Node {
     T value;
@@ -15,6 +16,7 @@ struct Node {
     Node(T val, int d = 0) : value(val), left(nullptr), right(nullptr), depth(d) {}
 };
 
+// 
 template <typename T>
 class MultiLevelTree {
 private:
@@ -155,21 +157,25 @@ int main() {
     std::mt19937 rng(std::random_device{}());
     std::uniform_int_distribution<> randomNumber(0, 100);
     std::vector<int> randomNumbers;
+
+    //
     for (int index = 0; index < AMOUNT_NUMBERS; index++){
         int num = randomNumber(rng);
         randomNumbers.push_back(num);
     }  
+
     // Calculate the median of the random numbers and initialize tree  
     int median = tree.calculateMedian(randomNumbers);
     std::cout << "Median: " << median << std::endl;
     std::cout << std::endl;
     tree.insert(median); // Insert the median as the root to ensure a balanced tree
 
-    // Insert some dummy data
+    // Insert random values
     for (int index = 0; index < AMOUNT_NUMBERS; index++){
         tree.insert(randomNumbers[index]);
     }
 
+    //
     tree.printGraph(); // Print the graph levels
 
     // Normal left to right traversals
