@@ -65,7 +65,9 @@ int main(int argc, char* argv[]){
 	
 	
 	/*
-	*	Implement List Template
+	*	Implement List TemplateI sent the email to Ms Nguyen at housing and copied you so that you know I was working on it.
+
+I got the email/letter from Conrad yesterday.  I am waiting on Ms. Nguyen, Thanks.;
 	*/
 	std::list<int> myList;
 	myList.push_back(7);
@@ -74,11 +76,19 @@ int main(int argc, char* argv[]){
 	myList.push_front(23);
 	myList.push_back(17);
 	myList.push_back(29);
+	myList.push_front(31);
 	
 	std::cout << " " << std::endl;
 	std::cout << "START" << std::endl;
-	for(std::list<int>::iterator index=myList.begin(); index != myList.end(); index++){
-		std::cout << *index << std::endl;
+	for(std::list<int>::iterator iter=myList.begin(); iter != myList.end(); iter++){
+		std::cout << *iter << std::endl;
+	}
+	
+	myList.erase(myList.begin());
+	std::cout << std::endl;
+	
+	for(std::list<int>::iterator iter=myList.begin(); iter != myList.end(); iter++){
+		std::cout << *iter << std::endl;
 	}
 	
 	return 0;		
