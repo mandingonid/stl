@@ -1,0 +1,80 @@
+[33mcommit d5f373b3e050ed0501e3fd3c0c5769b1860135d4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mTEMPINIT250402[m[33m, [m[1;31morigin/TEMPINIT250330[m[33m)[m
+Author: Rodney Moore <rodney@nerdsindenial.com>
+Date:   Tue May 12 14:55:27 2026 -0700
+
+     Changes to be committed:
+            modified:   STLBASICS/GenericFunctions.cpp
+
+[33mcommit eea1f1c07714c4f03d10ffdfe606761d62f1ebe5[m
+Author: Rodney Moore <rodney@nerdsindenial.com>
+Date:   Tue May 12 14:43:55 2026 -0700
+
+     On branch TEMPINIT250402
+     Your branch is ahead of 'origin/TEMPINIT250330' by 5 commits.
+       (use "git push" to publish your local commits)
+    
+     Changes to be committed:
+            new file:   STLBASICS/.vscode/c_cpp_properties.json
+            new file:   STLBASICS/.vscode/launch.json
+            new file:   STLBASICS/.vscode/settings.json
+            new file:   STLBASICS/Debug/GenericFunctions.d
+            new file:   STLBASICS/Debug/GenericFunctions.o
+            new file:   STLBASICS/Debug/STLBASICS
+            new file:   STLBASICS/Debug/makefile
+            new file:   STLBASICS/Debug/objects.mk
+            new file:   STLBASICS/Debug/sources.mk
+            new file:   STLBASICS/Debug/subdir.mk
+            new file:   STLBASICS/GenericFunctions.cpp
+
+[33mcommit df6bdce8d8a5c88eaacdd7ebda3b5a84057d1398[m[33m ([m[1;31morigin/TEMPINIT250402[m[33m)[m
+Author: Rodney Moore <rodney@nerdsindenial.com>
+Date:   Sat Apr 12 10:35:33 2025 -0700
+
+    Checking 2FA connection to github
+
+[33mcommit 8d47c5983d458de0c2d8e76f6f0819957fa256aa[m
+Author: Rodney Moore <rodney@nerdsindenial.com>
+Date:   Fri Apr 4 01:33:53 2025 -0700
+
+    Initial draft of standard template library set template.
+
+[33mcommit 1d00e30406ccb42ff714b5865eb44fde466b8eee[m
+Author: Rodney Moore <rodney@nerdsindenial.com>
+Date:   Thu Apr 3 18:34:40 2025 -0700
+
+    Added string::capacity() and string::shrink_to_fit() methods
+
+[33mcommit f2e2974acad1e0ae6f5af2b3e0138f8a2ac1bc7c[m
+Author: Rodney Moore <rodney@nerdsindenial.com>
+Date:   Wed Apr 2 17:54:29 2025 -0700
+
+    On branch TEMPINIT250402
+    Your branch is ahead of 'origin/TEMPINIT250330' by 1 commit.
+            new file:   .cproject
+            new file:   .gitignore
+            new file:   .project
+            new file:   .settings/language.settings.xml
+            new file:   STLTEMPS/.cproject
+            new file:   STLTEMPS/.gitignore
+            new file:   STLTEMPS/.project
+            new file:   STLTEMPS/.settings/language.settings.xml
+
+[33mcommit 40735b1c1f293b4ec996dcc541bd3937cc29ce41[m
+Author: Rodney Moore <rodney@nerdsindenial.com>
+Date:   Wed Apr 2 16:55:31 2025 -0700
+
+    On branch TEMPINIT250402
+            new file:   string_template.cpp
+
+[33mcommit 72514e6ea0246908828cd51f981a8f752e2eabd1[m
+Author: Rodney Moore <rodney@nerdsindenial.com>
+Date:   Mon Mar 31 14:22:28 2025 -0700
+
+    On branch TEMPINIT250330
+            new file:   string_template.cpp
+
+[33mcommit 9bbfd7c1cf80ab072d06bf71bc9cc23b1ae9b03c[m[33m ([m[1;33mtag: [m[1;33mv1.0.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: raggamuffin <rodney@nerdsindenial.com>
+Date:   Sun Mar 30 10:18:42 2025 -0700
+
+    Initial commit
