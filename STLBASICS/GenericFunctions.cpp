@@ -71,25 +71,4 @@ I got the email/letter from Conrad yesterday.  I am waiting on Ms. Nguyen, Thank
 	*/
 	std::list<int> myList;
 	myList.push_back(7);
-	myList.push_back(11);
-	myList.push_back(13);
-	myList.push_front(23);
-	myList.push_back(17);
-	myList.push_back(29);
-	myList.push_front(31);
-	
-	std::cout << " " << std::endl;
-	std::cout << "START" << std::endl;
-	for(std::list<int>::iterator iter=myList.begin(); iter != myList.end(); iter++){
-		std::cout << *iter << std::endl;
-	}
-	
-	myList.erase(myList.begin());
-	std::cout << std::endl;
-	
-	for(std::list<int>::iterator iter=myList.begin(); iter != myList.end(); iter++){
-		std::cout << *iter << std::endl;
-	}
-	
-	return 0;		
-}
+	myList.push_back(
