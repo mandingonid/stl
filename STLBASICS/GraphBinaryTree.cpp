@@ -5,6 +5,7 @@
 #include <random>
 #include <algorithm>
 
+// Node structure definition
 template <typename T>
 struct Node {
     T value;
@@ -15,6 +16,7 @@ struct Node {
     Node(T val, int d = 0) : value(val), left(nullptr), right(nullptr), depth(d) {}
 };
 
+// MultiLevelTree class definition
 template <typename T>
 class MultiLevelTree {
 private:
