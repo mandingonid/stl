@@ -33,7 +33,7 @@ int main(int argc, char* argv[]) {
       std::getline(ss, firstName, ' ');
       std::getline(ss, lastName, ' ');
       std::getline(ss, playerRank, ' ');
-      std::cout << "Player ID: " << playerId << ", Name: " << firstName << " " << lastName << ", Rank: " << playerRank << std::endl;  
+      std::cout << "Player ID: " << playerId << " Name: " << firstName << " " << lastName << ", Rank: " << playerRank << std::endl;  
 
       playerRoster.insert(std::pair<std::string, int>(firstName + " " + lastName, std::stoi(playerRank)));
     }
