@@ -46,6 +46,5 @@ int main(int argc, char* argv[]) {
       std::cout << "Player: " << pair.first << " Rank: " << pair.second << std::endl;
     }
   }
-
   return 0;
 }
