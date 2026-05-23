@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
     // playerRoster.clear(); // Clearing the entire roster
 
     for(auto pair : playerRoster){
-      std::cout << "Player: " << pair.first << ", Rank: " << pair.second << std::endl;
+      std::cout << "Player: " << pair.first << " Rank: " << pair.second << std::endl;
     }
   }
 
