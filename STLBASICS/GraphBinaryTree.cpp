@@ -21,9 +21,22 @@ template <typename T>
 class MultiLevelTree {
 private:
 
-    // Internal recursive helpers
+    // Internal binary tree insertion method with duplicate removal check
     void insertBST(std::shared_ptr<Node<T>> node, T val, int depth) {
-        if (val < node->value) {
+        if (val == node->value) {
+            return; // No duplicates allowed
+        }
+        else if (val < node->value) {
+            if (!node->left) node->left = std::make_shared<Node<T>>(val, depth);
+            else insertBST(node->left, val, depth + 1);
+        } else {
+            if (!node->right) node->right = std::make_shared<Node<T>>(val, depth);
+            else insertBST(node->right, val, depth + 1);
+        }
+        if (val == node->value) {
+            return; // No duplicates allowed
+        }
+        else if (val < node->value) {
             if (!node->left) node->left = std::make_shared<Node<T>>(val, depth);
             else insertBST(node->left, val, depth + 1);
         } else {
@@ -52,15 +65,15 @@ private:
         }
     }
 
-    //
+    // Recursive traversal method inorder
     void inorderRec(std::shared_ptr<Node<T>> node) {
         if (!node) return;
         inorderRec(node->left);
-        std::cout << node->value << " ";
+        std::cout << node->value << " ";        if (val < node->value) {
         inorderRec(node->right);
     }
 
-    //
+    // Recursive traversal method preorder
     void preorderRec(std::shared_ptr<Node<T>> node) {
         if (!node) return;
         std::cout << node->value << " ";
@@ -68,7 +81,7 @@ private:
         preorderRec(node->right);
     }
 
-    //
+    // Recursive traversal method postorder
     void postorderRec(std::shared_ptr<Node<T>> node) {
         if (!node) return;
         postorderRec(node->left);
@@ -76,7 +89,7 @@ private:
         std::cout << node->value << " ";
     }
 
-    //
+    // Recursive traversal method reverse inorder
     void reverseInorderRec(std::shared_ptr<Node<T>> node) {
         if (!node) return;
         inorderRec(node->right);
@@ -84,7 +97,7 @@ private:
         inorderRec(node->left);
     }
 
-    //
+    // Recursive traversal method reverse preorder
     void reversePreorderRec(std::shared_ptr<Node<T>> node) {
         if (!node) return;
         std::cout << node->value << " ";
@@ -92,7 +105,7 @@ private:
         preorderRec(node->left);
     }
 
-    //
+    // Recursive traversal method reverse postorder
     void reversePostorderRec(std::shared_ptr<Node<T>> node) {
         if (!node) return;
         postorderRec(node->right);
@@ -153,7 +166,7 @@ public:
 int main() {
     MultiLevelTree<int> tree;
     // ... (Your existing initialization code)
-    const int AMOUNT_NUMBERS = 111; // Reduced for cleaner output
+    const int AMOUNT_NUMBERS = 151; // Reduced for cleaner output
     std::mt19937 rng(std::random_device{}());
     std::uniform_int_distribution<> randomNumber(0, 100);
     std::vector<int> randomNumbers;
