@@ -25,6 +25,7 @@ int main() {
     std::getline(playerFile, playerLine);  // read and throw away file header line
     std::getline(playerFile, playerLine);  // read and throw away file column headers
 
+    // Parse each line of the player file and populate the player roster map
     while(std::getline(playerFile, playerLine)){
       std::cout << playerLine << std::endl;
       std::stringstream ss(playerLine);
