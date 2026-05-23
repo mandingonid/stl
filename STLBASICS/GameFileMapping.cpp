@@ -12,7 +12,7 @@
 #include <string>
 
 
-int main() {
+int main(int argc, char* argv[]) {
 
   std::ifstream playerFile("NameFile.txt");
   std::string playerLine, playerId,firstName, lastName, playerRank;
@@ -33,7 +33,7 @@ int main() {
       std::getline(ss, firstName, ' ');
       std::getline(ss, lastName, ' ');
       std::getline(ss, playerRank, ' ');
-      std::cout << "Player ID: " << playerId << ", Name: " << firstName << " " << lastName << ", Rank: " << playerRank << std::endl;  
+      std::cout << "Player ID: " << playerId << " Name: " << firstName << " " << lastName << ", Rank: " << playerRank << std::endl;  
 
       playerRoster.insert(std::pair<std::string, int>(firstName + " " + lastName, std::stoi(playerRank)));
     }
@@ -43,7 +43,7 @@ int main() {
     // playerRoster.clear(); // Clearing the entire roster
 
     for(auto pair : playerRoster){
-      std::cout << "Player: " << pair.first << ", Rank: " << pair.second << std::endl;
+      std::cout << "Player: " << pair.first << " Rank: " << pair.second << std::endl;
     }
   }
 
