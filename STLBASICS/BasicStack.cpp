@@ -23,6 +23,20 @@ int main() {
     myStack.push(23);
     myStack.push(29);
     myStack.push(31); 
+    myStack.push(37);
+    myStack.push(41);
+    myStack.push(43);
+    myStack.push(47);
+    myStack.push(53);
+    myStack.push(59);
+    myStack.push(61);
+    myStack.push(67);
+    myStack.push(71);
+    myStack.push(73);
+    myStack.push(79);
+    myStack.push(83);
+    myStack.push(89);
+    myStack.push(97);   
 
     // Display the top element
     std::cout << "Top element: " << myStack.top() << std::endl;
