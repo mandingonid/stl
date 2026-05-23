@@ -12,7 +12,7 @@
 #include <string>
 
 
-int main() {
+int main(int argc, char* argv[]) {
 
   std::ifstream playerFile("NameFile.txt");
   std::string playerLine, playerId,firstName, lastName, playerRank;
