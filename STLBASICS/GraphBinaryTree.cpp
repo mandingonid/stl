@@ -45,7 +45,7 @@ private:
         while (!q.empty()) {
             int size = q.size();
             std::vector<T> currentLevel;
-            for (int i = 0; i < size; ++i) {
+            for (int index = 0; index < size; ++index) {
                 auto node = q.front();
                 q.pop();
                 currentLevel.push_back(node->value);
